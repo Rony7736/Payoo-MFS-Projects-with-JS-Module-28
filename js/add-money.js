@@ -39,8 +39,13 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         
         document.getElementById('account-balance').innerText = newBalance;
 
+        // add to transaction history
+        const p = document.createElement('p');
+        p.innerText = `Added: ${addMoney} Tk. New Balance: ${newBalance}`;
+        console.log(p);
         
-        
+        // single vabe korle eita tobe transaction er kaj funtion add kore korte hoy
+        document.getElementById('transaction-container').appendChild(p)
     }
     else{
         alert('Failed to add Money')
