@@ -31,6 +31,11 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     const addMoney = getInputFieldValueById('add-money-input')
     const pinNumber = getInputFieldValueById('pin-input')
     // console.log('add money with parameter', addMoney, pinNumber);
+
+    if(isNaN(addMoney)){
+        alert('Failed to add Money')
+        return;
+    }
     
     if(pinNumber === 1234){
         const balance = getTextFieldValueById('account-balance')
