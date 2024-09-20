@@ -35,7 +35,6 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
     }
     else{
         alert('Wrong pin, Do not cash out');
-        
     }
     
 
